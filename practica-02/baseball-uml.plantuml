@@ -1,0 +1,5 @@
+@startuml baseball-uml 
+class Estadio
+Estadio o-- Equipo
+Equipo *- Jugadores
+@enduml

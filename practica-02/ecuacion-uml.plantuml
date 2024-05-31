@@ -1,0 +1,12 @@
+@startuml ecuacion-uml
+
+class EcuacionFP
+class UFC 
+class TCF 
+class SubfactorTCF
+
+EcuacionFP *-- UFC: operando
+EcuacionFP *-- TCF: operando
+TCF *-- "14  "SubfactorTCF: subfactores
+
+@enduml

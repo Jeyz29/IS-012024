@@ -1,0 +1,8 @@
+@startuml comite-uml
+class Persona 
+class Comite
+class Coordinador
+Coordinador <|-- Persona 
+Comite "Muchos"*-- "1   " Coordinador
+Persona "2..*  " o-- Comite
+@enduml

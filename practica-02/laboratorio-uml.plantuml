@@ -1,0 +1,12 @@
+@startuml laboratorio-uml
+
+class Laboratorio 
+class Equipo
+class EquipoNuclear extends Equipo 
+
+Laboratorio *-- Equipo
+Laboratorio *-- EquipoNuclear
+
+EquipoNuclear *-- Equipo
+
+@enduml

@@ -1,0 +1,5 @@
+@startuml disco-duro-uml
+class Disco_Duro
+Disco_Duro *- Pistas
+Pistas *- Sectores
+@enduml

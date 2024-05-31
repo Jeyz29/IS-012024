@@ -1,0 +1,4 @@
+@startuml teclado-uml
+class Teclado
+Teclado *- Teclas : tiene 105 >
+@enduml

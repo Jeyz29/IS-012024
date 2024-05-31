@@ -1,0 +1,6 @@
+@startuml personas-uml
+class Persona
+Persona ^-- Estudiante
+Persona ^-- Profesores
+Persona ^-- Empleados
+@enduml

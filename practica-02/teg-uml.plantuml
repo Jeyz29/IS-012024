@@ -1,0 +1,18 @@
+@startuml teg-uml
+
+class TrabajoInvestigacion
+class Profesor
+
+class TEG extends TrabajoInvestigacion
+class TGM extends TrabajoInvestigacion
+
+class EstudiantePregrado 
+
+class EstudiantePostgrado 
+
+TrabajoInvestigacion "1..*     " *--  Profesor: tutores
+TrabajoInvestigacion *-- Estudiante
+TEG *-- "1..2    "EstudiantePregrado: estudiantes
+TGM *-- "1     "EstudiantePostgrado: estudiante
+
+@enduml

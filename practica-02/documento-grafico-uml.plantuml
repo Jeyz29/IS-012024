@@ -1,0 +1,16 @@
+@startuml documento-grafico-uml
+
+class DocumentoGrafico 
+class Hoja 
+class ObjetoDibujo 
+class Figura2D extends ObjetoDibujo 
+class Circulo extends Figura2D 
+class Cuadrado extends Figura2D
+class Grupo
+
+ObjetoDibujo <|-- "1" Grupo
+DocumentoGrafico *-- Hoja
+Hoja *-- "1  " ObjetoDibujo
+Grupo *-- "2..*"ObjetoDibujo 
+
+@enduml
